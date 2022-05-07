@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/daijiong/base-image:v1.0.0
+FROM registry.cn-hangzhou.aliyuncs.com/daijiong/base-image:1.0.0
 LABEL author="daijiong"
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN mkdir -p /xxl-job-admin
