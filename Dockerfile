@@ -1,6 +1,7 @@
-FROM registry.cn-hangzhou.aliyuncs.com/djflying/base-image:1.0.0
+FROM openjdk:8-jre-slim
 LABEL author="daijiong"
-RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+ENV TZ=PRC
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN mkdir -p /xxl-job-admin
 WORKDIR /xxl-job-admin
 EXPOSE 8082
