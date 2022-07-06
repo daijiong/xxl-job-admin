@@ -15,9 +15,9 @@ spring:
         namespace: @config.namespace@
         group: ${spring.application.name}
         extension-configs:
-          - data-id: management.yaml
-            group: COMMON
-            refresh: true
+#          - data-id: management.yaml
+#            group: COMMON
+#            refresh: true
       discovery:
         server-addr: @config.server-addr@
         namespace: @config.namespace@

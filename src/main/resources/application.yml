@@ -1,22 +1,22 @@
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-      base-path: /actuator
-  endpoint:
-    logfile:
-      external-file: ./log/info.log
-    shutdown:
-      enabled: false
-  metrics:
-    export:
-      prometheus:
-        enabled: true
-      jmx:
-        enabled: true
-    tags:
-      application: ${spring.application.name}
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#      base-path: /actuator
+#  endpoint:
+#    logfile:
+#      external-file: ./log/info.log
+#    shutdown:
+#      enabled: false
+#  metrics:
+#    export:
+#      prometheus:
+#        enabled: true
+#      jmx:
+#        enabled: true
+#    tags:
+#      application: ${spring.application.name}
 
 spring:
   datasource:
@@ -67,11 +67,11 @@ mybatis:
   mapper-locations: classpath:/mybatis-mapper/*Mapper.xml
 xxl:
   job:
-    accessToken: ''
+    accessToken: EA00FD9F854711EB83BE00163E10231A
     i18n: zh_CN
     login:
       username: admin
-      password: admin@shr.com
+      password: 123456
     logretentiondays: 30
     triggerpool:
       fast:
