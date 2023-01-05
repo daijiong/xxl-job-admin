@@ -58,3 +58,6 @@ buildNumber.properties
 .DS_Store
 
 pdm/erp.pdm
+
+# Jrebel
+/src/main/resources/rebel.xml
